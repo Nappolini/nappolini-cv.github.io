@@ -1,0 +1,157 @@
+
+// Nav toggle oppen
+
+// .navigation
+
+//     width: 100%; 
+    
+
+.nav-toggle
+   
+    height: 50px 
+    width: 50px
+    display: flex 
+    align-items: center
+    cursor: pointer
+
+
+    span,
+    span:before, 
+    span:after
+        content: ""
+        display: block 
+        height: 2px 
+        width: 100%
+        background: #333
+        position: relative 
+
+        transition: all 0.2s ease-in-out
+
+    span::before
+        top: 10px 
+
+    span::after
+        top: -12px
+
+    &:hover span 
+        background: transparent 
+        
+    &:hover span::before, 
+    &:hover span::after
+        transform-origin: center 
+        transform: rotate(0deg)
+        top: 0
+        background-color: #e250ed
+
+    &:hover span::after 
+        transform: rotate(-0deg)
+
+
+// Nav toggle close 
+
+// .nav-toggle-close
+//     display: flex 
+//     margin-left: 90vw
+//     margin-bottom: 50vh 
+//     padding-top: 36px
+//     height: 50px 
+//     width: 50px
+//     cursor: pointer
+    
+
+
+//     span,
+//     span:before, 
+//     span:after
+//         content: ""
+//         display: block 
+//         height: 2px 
+//         width: 100%
+//         background: white
+//         position: relative 
+
+//         transition: all 0.2s ease-in-out
+
+        
+
+//     span::before
+//         top: 10px 
+
+//     span::after
+//         top: -12px
+
+//     span 
+//         background: transparent 
+        
+//     span::before, 
+//     span::after
+//         transform-origin: center 
+//         transform: rotate(45deg)
+//         top: 0
+
+//     span::after 
+//         transform: rotate(-45deg)
+
+//     &:hover span::before, 
+//     &:hover span::after
+//        background-color: #e250ed
+    
+//     &:hover span::after
+//         transform: rotate(-0deg)
+
+//     &:hover span::before
+//         transform: rotate(0deg)
+
+// // .display-none
+// //     display: none
+
+
+// .nav-is-open .site-container,
+// .nav-is-open .offsite-container 
+
+//   transform: translateX(15rem)
+
+// .nav-is-open
+//     transform: translatex(15rem)
+//     margin-left: -40px
+//     background-color: black 
+//     height: 100vh 
+//     width: 14rem
+//     display: flex
+//     flex-direction: column 
+//     justify-content: flex-end
+    
+//     ul 
+//         margin-bottom: 90px
+//         color: black
+//         padding-left: 50px;
+
+//         li
+//             padding-top: 25px 
+//             a
+//                 font-size: 50px
+//                 color: white
+//                 font-family: 'Song Myung', serif
+    
+// .offsite-container 
+//     // position: fixed
+//     top: 0
+//     bottom: 0
+//     left: -14rem
+//     width: 14rem
+//     background-color: black;
+//     transition: transform 0.3s ease-out
+// // Dots Navigation 
+
+// // .dots, 
+// // .navigation
+// //     display: none
+
+
+    
+    
+    
+
+
+
+    

@@ -1,0 +1,98 @@
+
+
+
+.container
+    display: grid
+    grid-template-columns: repeat(1, 1fr) 
+  
+.col3, 
+.col4
+    display: none
+    
+.col1
+    order: 1
+.col2
+    order: 2 
+.col3
+    order: 4 
+.col4
+    order: 3
+.col5
+    order: 5 
+.col6   
+    order: 6
+
+.col1, 
+.col2, 
+.col3, 
+.col4, 
+.col5, 
+.col6
+    grid-column: span 1
+    height: 50vh 
+    width: 100vw
+    // background-color: #bec417 
+
+.col2, 
+.col3
+    background-color: #e250ed
+
+    // .col4
+    //     background-color: #e250ed
+
+.col6 
+    background-color: black 
+    
+
+.contact 
+    color: white
+
+    
+
+
+
+
+
+
+
+
+
+
+// Ipad
+@media (min-width: 768px )
+
+    .container
+        grid-template-columns: repeat(2, 1fr) 
+
+
+
+    .col1
+        order: 1
+    .col2
+        order: 2 
+    .col3
+        order: 5
+    .col4
+        order: 6
+    .col5
+        order: 4 
+    .col6   
+        order: 3
+
+        
+    .col1, 
+    .col2, 
+    .col3, 
+    .col4, 
+    .col5, 
+    .col6
+        grid-column: span 1
+        height: 50vh 
+        width: 50vw
+
+    .col4
+        background-color: white    
+    .col2, 
+    .col3
+        background-color: #e250ed
+
