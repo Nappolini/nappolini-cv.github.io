@@ -1,33 +1,53 @@
 
+
+
 .container
     display: grid
-    grid-template-columns: repeat(9, 1fr)
-
-
-.col 
-    /* We center the contents of these items. You can also do this with flexbox too! */
-    display: grid
-    height: 100vh  
-    padding-left: 75px
+    grid-template-columns: repeat(1, 1fr) 
+  
+.col3, 
+.col4
+    display: none
     
-
 .col1
-    
-    grid-column: span 7
-    grid-row: span 4
-    height: 100vh 
+    order: 1
+.col2
+    order: 2 
+.col3
+    order: 4 
+.col4
+    order: 3
+.col5
+    order: 5 
+.col6   
+    order: 6
+
+.col1, 
+.col2, 
+.col3, 
+.col4, 
+.col5, 
+.col6
+    grid-column: span 1
+    height: 50vh 
+    width: 100vw
     // background-color: #bec417 
 
-.col2
-    display: none
-    grid-column: span 3
-    grid-row: span 4 
-    background-color: #e250ed
-
-
+.col2, 
 .col3
-    grid-column: span 1
-    grid-row: span 4
+    background-color: black
+
+    // .col4
+    //     background-color: #e250ed
+
+.col6 
+    background-color: black 
+    
+
+.contact 
+    color: white
+
+    
 
 
 
@@ -40,67 +60,39 @@
 
 // Ipad
 @media (min-width: 768px )
+
     .container
-        display: grid
-        grid-template-columns: repeat(13, 1fr)
+        grid-template-columns: repeat(2, 1fr) 
 
 
-    .col 
-        /* We center the contents of these items. You can also do this with flexbox too! */
-        display: grid
-        height: 100vh  
-        padding-left: 75px
-        
 
-    .col1 
-        
-        grid-column: span 5
-        grid-row: span 4
-        height: 100vh 
-        // background-color: #bec417 
-
+    .col1
+        order: 1
     .col2
-        grid-column: span 6
-        grid-row: span 4 
-        // width: 30vw
-        background-color: #e250ed
-
-
-        .col3
-            grid-column: span 1
-            grid-row: span 4
-
-
-// Ipad
-@media (min-width: 1068px )
-    .container
-        display: grid
-        grid-template-columns: repeat(9, 1fr)
-
-
-    .col 
-        /* We center the contents of these items. You can also do this with flexbox too! */
-        display: grid
-        height: 100vh  
-        padding-left: 75px
-        
-
-    .col1 
-        
-        grid-column: span 4
-        grid-row: span 4
-        height: 100vh 
-        // background-color: #bec417 
-
-    .col2
-        grid-column: span 4
-        grid-row: span 4 
-        // width: 30vw
-        background-color: #e250ed
-
-
+        order: 2 
     .col3
-    
-        margin-right: 50px
+        order: 5
+    .col4
+        order: 6
+    .col5
+        order: 4 
+    .col6   
+        order: 3
+
+        
+    .col1, 
+    .col2, 
+    .col3, 
+    .col4, 
+    .col5, 
+    .col6
         grid-column: span 1
-        grid-row: span 4
+        height: 50vh 
+        width: 50vw
+
+    .col4
+        background-color: white    
+    .col2, 
+    .col3
+        background-color: black
+

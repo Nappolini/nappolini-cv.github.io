@@ -1,1 +1,1 @@
-"use strict";var offsiteToggle=document.querySelector(".jsOffsiteToggle");offsiteToggle.addEventListener("click",function(e){return document.body.classList.toggle("nav-is-open")});
+"use strict";var openButton=document.querySelector(".jsModalToggle"),closeButton=document.querySelector(".jsModalClose");openButton.addEventListener("click",function(e){document.body.classList.add("modal-is-open")}),closeButton.addEventListener("click",function(e){document.body.classList.remove("modal-is-open")});
